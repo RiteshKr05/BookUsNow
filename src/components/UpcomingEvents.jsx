@@ -32,10 +32,11 @@ const Events = () => {
         const observer = new IntersectionObserver(
             (entries) => {
                 if (entries[0].isIntersecting) {
+                    console.log('Loading indicator is visible');
                     fetchUpcomingEvents();
                 }
             },
-            { threshold: 1.0 }
+            { threshold: 0 }
         );
 
         if (loadingRef.current) {
@@ -48,6 +49,8 @@ const Events = () => {
             }
         };
     }, [page]);
+    
+    console.log('Loading state:', loading);
 
     useEffect(() => {
         fetchUpcomingEvents();
