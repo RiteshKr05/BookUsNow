@@ -8,7 +8,7 @@ const Events = () => {
     const fetchRecommendedEvents = async () => {
         try {
             const response = await fetch(
-                // 'https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&type=reco'
+                'https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&type=reco'
             );
             const data = await response.json();
 
