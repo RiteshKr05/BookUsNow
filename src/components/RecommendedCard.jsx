@@ -9,6 +9,7 @@ const RecommendedCard = ({event}) => {
         <div className=' text-white flex justify-between'>
             <div className=' font-medium'>Make Agree</div>
             <div className=' text-xs pt-1'>March 23, 2024</div>
+            <h1>h</h1>
         </div>
         <div className=' text-white flex justify-between text-xs'>
             <div>West Douglas</div>
